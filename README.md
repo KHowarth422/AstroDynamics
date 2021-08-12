@@ -2,7 +2,7 @@
 C++ code for time-marching Newton's law to simulate particles moving under gravitational force from one another. Can be applied for simulating planetary motion, playing with the three-body problem, etc.
 
 **modelClasses.cpp & .h**
-> C++ files containing the data structures and functions used to model the particles. The overall structure is a single Frame which uses a hashmap to contain any number of Particles. Each Particle has some two-dimensional position within the frame, as well as some velocity, mass, etc. Each Particle is subject to gravitational forces from each other Particle in the same Frame.
+> C++ files containing the data structures and functions used to model the particles. The overall structure is a single Frame which uses a hashmap to contain any number of Particles. Each Particle has some two-dimensional position within the Frame, as well as some velocity, mass, etc. Additionally, each Particle is subject to gravitational forces from each other Particle in the same Frame. This gravitational force, along with user-specified initial velocity of each Particle, is what causes the Particles to move.
 
 **main.cpp**
 > C++ script for creating a few different Frames and time-marching all particles within the Frame over some user-specified duration. Default usage after compiling:
